@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poolitna.github.io/mission-critical-site/sitemap.xml

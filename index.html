@@ -1,49 +1,175 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mission Critical | What the AI build-out is made of</title>
-<meta name="description" content="Mission Critical by Cam Drummond: a weekly newsletter following critical minerals from the pit to the finished product, along with the politics and money that move them.">
-<meta property="og:title" content="Mission Critical"><meta property="og:description" content="What the AI build-out is made of. A weekly newsletter by Cam Drummond.">
-<meta property="og:image" content="art/og-1200x630.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.">
+<link rel="canonical" href="https://poolitna.github.io/mission-critical-site/">
+<meta property="og:title" content="Mission Critical | What the AI build-out is made of">
+<meta property="og:description" content="Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.">
+<meta property="og:url" content="https://poolitna.github.io/mission-critical-site/">
+<meta property="og:image" content="https://poolitna.github.io/mission-critical-site/art/og-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mission Critical">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://poolitna.github.io/mission-critical-site/art/og-1200x630.png">
+<meta name="theme-color" content="#08090d">
 <link rel="icon" href="art/mc-logo.png">
-<style>
-:root{--bg:#0A0A0E;--cu:#B0441F;--vi:#6B4BD6;--cy:#12B8E0;--tx:#ECEAF2;--mu:#A7A3B5}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-a{color:var(--cy)}header{display:flex;align-items:center;gap:12px;padding:18px 6vw;position:absolute;z-index:2}
-header img{height:40px}header b{letter-spacing:.08em;text-transform:uppercase}
-.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,var(--bg))}
-.hero .in{position:relative;z-index:1;padding:0 6vw 8vh;max-width:900px}
-h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.05;margin:0 0 .3em}
-.tag{color:var(--cy);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}
-.btn{display:inline-block;padding:14px 22px;border-radius:6px;font-weight:700;text-decoration:none;margin:6px 10px 6px 0}
-.p{background:var(--cu);color:#fff}.s{border:2px solid var(--vi);color:var(--tx)}
-form{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}input{flex:1 1 240px;padding:14px;border-radius:6px;border:1px solid #333;background:#15151c;color:var(--tx);font-size:1rem}
-button{padding:14px 22px;border:0;border-radius:6px;background:var(--cu);color:#fff;font-weight:700;font-size:1rem;cursor:pointer}
-section{padding:8vh 6vw;display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;max-width:1200px;margin:auto}
-section img{width:100%;border-radius:8px}h2{font-size:2rem;margin:0 0 .4em}small,.mu{color:var(--mu)}
-footer{padding:6vh 6vw;border-top:1px solid #222;color:var(--mu);font-size:.9rem}
-@media(max-width:760px){section{grid-template-columns:1fr}}
-</style></head>
+<link rel="stylesheet" href="css/site.css">
+<script>
+(function () {
+  var reduce = false;
+  var saved = null;
+  try {
+    reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    saved = sessionStorage.getItem("mc-motion");
+  } catch (error) {}
+  document.documentElement.dataset.motion = (!reduce && saved !== "pause") ? "run" : "still";
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Mission Critical","url":"https://poolitna.github.io/mission-critical-site/","description":"Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.","publisher":{"@type":"Person","name":"Cam Drummond"}}
+</script>
+</head>
 <body>
-<header><img src="art/mc-logo.png" alt="Mission Critical logo"><b>Mission Critical</b></header>
-<div class="hero">
-<video autoplay muted loop playsinline poster="art/hero-16x9.webp"><source src="art/hero-loop.webm" type="video/webm"><source src="art/hero-loop-web.mp4" type="video/mp4"></video>
-<div class="in">
-<div class="tag">A weekly newsletter by Cam Drummond</div>
-<h1>What the AI build-out is made of</h1>
-<p>Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them, every week.</p>
-<form action="https://mission-critical-minerals.beehiiv.com/subscribe" method="get" target="_blank">
-<input type="email" name="email" placeholder="Your email address" required aria-label="Email address"><button type="submit">Subscribe free</button>
-</form>
-<small>Subscribing opens the Mission Critical page on Beehiiv to confirm.</small><br>
-<a class="btn s" href="https://mission-critical-minerals.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read issue 2</a>
-</div></div>
-<section><div><h2>The minerals</h2><p>Copper, lithium, graphite, gallium, germanium and rare earths: the metals inside data centres, power grids and chips, and where supply is tight.</p></div><img src="art/section-minerals.webp" alt="Critical minerals"></section>
-<section><img src="art/section-chokepoint.webp" alt="Supply chain chokepoints"><div><h2>The chokepoints</h2><p>Export controls, tariffs, quotas and price floors. Who holds the valves along the chain, and what changes when they turn them.</p></div></section>
-<section><div><h2>From Cam</h2><p>A weekly issue, Wednesday mornings Perth time. Short, sourced, and written for people who need to know what is moving in the chain.</p>
-<a class="btn p" href="https://mission-critical-minerals.beehiiv.com/subscribe">Subscribe</a><a class="btn s" href="https://mission-critical-minerals.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read issue 2</a></div><img src="art/section-author.webp" alt="Cam Drummond"></section>
-<footer>&copy; 2026 Mission Critical. General information only. Not financial product advice.</footer>
-</body></html>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="./">
+    <img src="art/mc-logo.png" alt="" width="1200" height="1200">
+    <span class="brand-text">
+      <span class="word">Mission Critical</span>
+      <span class="byline">A newsletter by Cam Drummond</span>
+    </span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav-panel">Menu</button>
+    <div id="nav-panel" class="nav-panel">
+      <a href="./" aria-current="page">Home</a>
+      <a href="read/">Read</a>
+      <a href="about/">About</a>
+      <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    </div>
+    <button type="button" class="motion-btn" id="motion-control" aria-pressed="false" aria-controls="hero-video">
+      <svg class="icon icon-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+      <svg class="icon icon-pause is-hidden" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      <span class="motion-label">Play motion</span>
+    </button>
+  </nav>
+</header>
+<main id="content">
+  <section class="hero" aria-labelledby="strapline">
+    <div class="hero-stage">
+      <div class="hero-copy">
+        <h1 class="hero-title" id="strapline">
+          <span class="line line-lead">What the AI <span class="compound">build-out</span></span>
+          <span class="line line-rest">is made of</span>
+        </h1>
+        <p class="dek">Critical minerals, from the pit to the finished product, and the politics and money that move them.</p>
+        <div class="opening-number">
+          <h2 id="number-heading">A number you can check</h2>
+          <p class="measure-name">Yangshan warrant premium</p>
+          <p class="figure">
+            <span class="figure-value">US$205</span>
+            <span class="figure-unit">a tonne</span>
+          </p>
+          <p class="measure-meta">Average. China import market. 28 October 2026. Up $17 a tonne from the previous trading day.</p>
+          <p class="measure-not">Not the outright London copper price. Not a live quote.</p>
+          <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market</a>, 28 October 2026.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
+        </div>
+        <p class="handoff"><a href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>. Continue on Beehiiv to subscribe.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-plate">
+          <div class="hero-media">
+            <img class="hero-still" src="art/hero-poster-960.webp" srcset="art/hero-poster-640.webp 640w, art/hero-poster-960.webp 960w, art/hero-poster-1440.webp 1440w, art/hero-16x9.webp 2688w" sizes="(min-width: 960px) 42vw, 100vw" alt="" width="2688" height="1536" fetchpriority="high" decoding="async">
+            <video id="hero-video" muted playsinline loop preload="none" poster="art/hero-poster-960.webp" data-webm="art/hero-loop.webm" data-mp4="art/hero-loop-web.mp4" aria-hidden="true"></video>
+          </div>
+        </div>
+        <p class="film-note">Designed motion. Not documentary footage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section explain" aria-labelledby="explain-heading">
+    <div class="wrap">
+      <h2 id="explain-heading">The warrant premium</h2>
+      <p>On 28 October 2026, Shanghai Metals Market put the average Yangshan warrant premium at US$205 a tonne, up $17 from the previous trading day. The same note put the warrant range at US$190 to US$220 a tonne. Their headline said premiums had climbed to record highs.</p>
+      <div class="explain-grid">
+        <div>
+          <h3>What it is</h3>
+          <p>An average for that day, in China's import market. The copper issue describes it as what buyers pay on top of the London price to get copper into China. Location, the piece argues, can matter as much as the headline price.</p>
+        </div>
+        <div>
+          <h3>What it isn't</h3>
+          <p>Not the outright London copper price. Not a live quote. SMM says the figures are for reference only and are not a recommendation. This page stops there. The rest of the reporting is in the issue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="materials-heading">
+    <div class="wrap prose">
+      <h2 id="materials-heading">The materials behind the machines</h2>
+      <p>Copper, lithium, graphite, gallium, germanium and rare earths. I follow where those supply chains tighten, and what buyers do next.</p>
+      <h2 id="choke-heading">Who controls the next step?</h2>
+      <p>Export controls, tariffs and financing decisions can change a supply chain before new material reaches a customer. The question is what changed, where it bites, and who has another option.</p>
+    </div>
+  </section>
+
+  <section class="section" id="issue" aria-labelledby="issue-title">
+    <div class="wrap record">
+      <div>
+        <h2 id="issue-title"><a href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Copper's got a plumbing problem</a></h2>
+        <p class="dateline">On the web | Issue 2 | 2 November 2026</p>
+        <p class="deck">A US$205 Yangshan warrant premium on 28 October shows why the location of copper matters as much as the headline price.</p>
+        <ul class="tags">
+          <li>Copper</li>
+          <li>Trade policy</li>
+        </ul>
+        <p class="fresh">Market figures in this issue are dated 22-29 October 2026.</p>
+      </div>
+      <figure class="plate">
+        <img src="art/section-minerals.webp" alt="Illustration of a faceted crystal crossed by copper-coloured veins" width="1216" height="896" loading="lazy" decoding="async">
+        <figcaption>Illustration. Not a photograph of a mine.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cam-heading">
+    <div class="wrap split reverse">
+      <div>
+        <h2 id="cam-heading">From Cam</h2>
+        <p>I'm Cam Drummond. This is my newsletter on the materials behind the AI build-out. I follow the supply chain, show the source, and say what the change means.</p>
+      </div>
+      <figure class="plate">
+        <img src="art/section-author.webp" alt="Illustration of a desk, a rock specimen and a laptop against a dusk skyline" width="1216" height="896" loading="lazy" decoding="async">
+        <figcaption>Illustration. Not a portrait, and not a record of an office.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-heading">
+    <div class="wrap">
+      <h2 id="close-heading">Subscribe</h2>
+      <p>Get Mission Critical by Cam Drummond. Start with the copper issue, then <a href="https://itsmissioncritical.beehiiv.com/subscribe">subscribe free</a> on Beehiiv.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>© 2026 Mission Critical. General information only. Not financial product advice.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="read/">Read</a>
+      <a href="about/">About</a>
+      <a href="https://itsmissioncritical.beehiiv.com/">Beehiiv publication</a>
+    </nav>
+  </div>
+</footer>
+<script type="module" src="js/site.js"></script>
+</body>
+</html>
