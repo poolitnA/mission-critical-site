@@ -42,8 +42,12 @@ test("home, read, and about carry the canonical destinations", async () => {
   assert.match(home, /is made of/);
   assert.match(home, /On 28 October 2026, SMM reported/);
   assert.match(home, /id="motion-control"/);
+  assert.match(home, /class="hero"[\s\S]*US\$205/);
+  assert.match(home, /role="tablist"/);
+  assert.match(home, /Who controls the next step\?/);
   assert.match(read, /Read Mission Critical/);
   assert.match(about, /Show the source/);
+  assert.match(about, /Shanghai Metals Market, 28 October 2026/);
   assert.doesNotMatch(home, /type="email"/);
   assert.doesNotMatch(home, /weekly/i);
 });

@@ -58,36 +58,38 @@
 <main id="content">
   <section class="hero" aria-labelledby="strapline">
     <div class="hero-stage">
-      <div class="hero-media">
-        <img class="hero-still" src="art/hero-poster-960.webp" srcset="art/hero-poster-640.webp 640w, art/hero-poster-960.webp 960w, art/hero-poster-1440.webp 1440w, art/hero-16x9.webp 2688w" sizes="100vw" alt="" width="2688" height="1536" fetchpriority="high" decoding="async">
-        <video id="hero-video" muted playsinline loop preload="none" poster="art/hero-poster-960.webp" data-webm="art/hero-loop.webm" data-mp4="art/hero-loop-web.mp4" aria-hidden="true"></video>
-      </div>
-      <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-copy">
         <h1 class="hero-title" id="strapline">
           <span class="line line-lead">What the AI <span class="compound">build-out</span></span>
           <span class="line line-rest">is made of</span>
         </h1>
         <p class="dek">Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.</p>
+        <div class="opening-number">
+          <h2 id="number-heading">A number you can check</h2>
+          <p class="figure">
+            <span class="figure-value">US$205</span>
+            <span class="figure-unit">a tonne</span>
+          </p>
+          <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market, 28 October 2026</a></p>
+        </div>
         <div class="actions">
-          <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
-          <a class="btn btn-ghost" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
+          <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
+          <a class="btn btn-ghost" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
         </div>
         <p class="handoff">Continue on Beehiiv to subscribe.</p>
+      </div>
+      <div class="hero-plate">
+        <div class="hero-media">
+          <img class="hero-still" src="art/hero-poster-960.webp" srcset="art/hero-poster-640.webp 640w, art/hero-poster-960.webp 960w, art/hero-poster-1440.webp 1440w, art/hero-16x9.webp 2688w" sizes="(min-width: 960px) 48vw, 100vw" alt="" width="2688" height="1536" fetchpriority="high" decoding="async">
+          <video id="hero-video" muted playsinline loop preload="none" poster="art/hero-poster-960.webp" data-webm="art/hero-loop.webm" data-mp4="art/hero-loop-web.mp4" aria-hidden="true"></video>
+        </div>
         <p class="film-note">Designed motion. Not documentary footage.</p>
       </div>
     </div>
   </section>
 
   <section class="tag" aria-labelledby="number-heading">
-    <div class="wrap tag-grid">
-      <div>
-        <h2 id="number-heading">A number you can check</h2>
-        <p class="figure" data-reveal>
-          <span class="figure-value">US$205</span>
-          <span class="figure-unit">a tonne</span>
-        </p>
-      </div>
+    <div class="wrap">
       <div class="tag-copy">
         <p>On 28 October 2026, SMM reported an average Yangshan warrant premium of US$205 a tonne, up $17 from the previous trading day. That is a Chinese import-market measure, not the outright London copper price.</p>
         <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market, 28 October 2026</a></p>
@@ -96,7 +98,38 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="issue-title">
+  <section class="section chain" aria-labelledby="materials-heading">
+    <div class="wrap">
+      <h2 id="materials-heading">The materials behind the machines</h2>
+      <p class="chain-lead">Copper, lithium, graphite, gallium, germanium and rare earths. Mission Critical follows where these supply chains tighten and what buyers do next.</p>
+      <div class="chain-nav" role="tablist" aria-label="Supply chain">
+        <button type="button" role="tab" id="tab-materials" aria-controls="panel-materials" aria-selected="true">The materials</button>
+        <button type="button" role="tab" id="tab-step" aria-controls="panel-step" aria-selected="false" tabindex="-1">The next step</button>
+      </div>
+      <div class="chain-panels">
+        <div class="chain-panel is-selected" id="panel-materials" role="tabpanel" aria-labelledby="tab-materials" tabindex="0">
+          <ul class="minerals">
+            <li><a href="#issue">Copper</a></li>
+            <li>Lithium</li>
+            <li>Graphite</li>
+            <li>Gallium</li>
+            <li>Germanium</li>
+            <li>Rare earths</li>
+          </ul>
+        </div>
+        <div class="chain-panel" id="panel-step" role="tabpanel" aria-labelledby="tab-step" tabindex="0">
+          <h3 id="choke-heading">Who controls the next step?</h3>
+          <p>Export controls, tariffs and financing decisions can change a supply chain before new material reaches a customer. The question is what changed, where it bites and who has another option.</p>
+          <figure class="plate">
+            <img src="art/section-chokepoint.webp" alt="Illustration of coloured strands narrowing through a gap" width="1216" height="896" loading="lazy" decoding="async">
+            <figcaption>Illustration. Not a photograph of a route or a port.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="issue" aria-labelledby="issue-title">
     <div class="wrap record">
       <div>
         <h2 id="issue-title">Copper's got a plumbing problem</h2>
@@ -112,26 +145,6 @@
       <figure class="plate">
         <img src="art/section-minerals.webp" alt="Illustration of a faceted crystal crossed by copper-coloured veins" width="1216" height="896" loading="lazy" decoding="async">
         <figcaption>Illustration. Not a photograph of a mine.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="materials-heading">
-    <div class="wrap">
-      <h2 id="materials-heading">The materials behind the machines</h2>
-      <p>Copper, lithium, graphite, gallium, germanium and rare earths. Mission Critical follows where these supply chains tighten and what buyers do next.</p>
-    </div>
-  </section>
-
-  <section class="section raise" aria-labelledby="choke-heading">
-    <div class="wrap split media-start">
-      <div>
-        <h2 id="choke-heading">Who controls the next step?</h2>
-        <p>Export controls, tariffs and financing decisions can change a supply chain before new material reaches a customer. The question is what changed, where it bites and who has another option.</p>
-      </div>
-      <figure class="plate">
-        <img src="art/section-chokepoint.webp" alt="Illustration of coloured strands narrowing through a gap" width="1216" height="896" loading="lazy" decoding="async">
-        <figcaption>Illustration. Not a photograph of a route or a port.</figcaption>
       </figure>
     </div>
   </section>

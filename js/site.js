@@ -163,14 +163,52 @@ if (desiredPlay) {
   setButton(false);
 }
 
-if (!reduced() && document.documentElement.dataset.motion === "run") {
-  inView("[data-reveal]", function (element) {
-    animate(
-      element,
-      { transform: ["translateY(18px)", "translateY(0px)"] },
-      { duration: 0.55, ease: "easeOut" }
-    );
+setupChain();
+
+function setupChain() {
+  const root = document.querySelector(".chain");
+  if (!root) return;
+  const tabs = [...root.querySelectorAll('[role="tab"]')];
+  const wide = window.matchMedia("(min-width: 960px)");
+  if (!tabs.length) return;
+  root.classList.add("is-ready");
+
+  function select(tab, animatePanel) {
+    tabs.forEach(function (item) {
+      const on = item === tab;
+      item.setAttribute("aria-selected", on ? "true" : "false");
+      item.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(item.getAttribute("aria-controls"));
+      if (!panel) return;
+      panel.classList.toggle("is-selected", on);
+      panel.hidden = wide.matches ? false : !on;
+      if (on && animatePanel && !wide.matches && !reduced() && document.documentElement.dataset.motion === "run") {
+        animate(panel, { opacity: [0.45, 1] }, { duration: 0.3, ease: "easeOut" });
+      }
+    });
+  }
+
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () { select(tab, true); });
+    tab.addEventListener("keydown", function (event) {
+      const keys = ["ArrowRight", "ArrowLeft", "Home", "End"];
+      if (!keys.includes(event.key)) return;
+      event.preventDefault();
+      let next = index;
+      if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
+      if (event.key === "ArrowLeft") next = (index + tabs.length - 1) % tabs.length;
+      if (event.key === "Home") next = 0;
+      if (event.key === "End") next = tabs.length - 1;
+      tabs[next].focus();
+      select(tabs[next], true);
+    });
   });
+
+  wide.addEventListener("change", function () {
+    const current = tabs.find(function (tab) { return tab.getAttribute("aria-selected") === "true"; }) || tabs[0];
+    select(current, false);
+  });
+  select(tabs[0], false);
 }
 
 reduceQuery.addEventListener("change", function () {
