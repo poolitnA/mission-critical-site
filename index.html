@@ -44,10 +44,13 @@
     </span>
   </a>
   <nav class="site-nav" aria-label="Primary">
-    <a href="./" aria-current="page">Home</a>
-    <a href="read/">Read</a>
-    <a href="about/">About</a>
-    <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav-panel">Menu</button>
+    <div id="nav-panel" class="nav-panel">
+      <a href="./" aria-current="page">Home</a>
+      <a href="read/">Read</a>
+      <a href="about/">About</a>
+      <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    </div>
     <button type="button" class="motion-btn" id="motion-control" aria-pressed="false" aria-controls="hero-video">
       <svg class="icon icon-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
       <svg class="icon icon-pause is-hidden" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
@@ -63,76 +66,65 @@
           <span class="line line-lead">What the AI <span class="compound">build-out</span></span>
           <span class="line line-rest">is made of</span>
         </h1>
-        <p class="dek">Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.</p>
+        <p class="dek">Critical minerals, from the pit to the finished product, and the politics and money that move them.</p>
         <div class="opening-number">
           <h2 id="number-heading">A number you can check</h2>
+          <p class="measure-name">Yangshan warrant premium</p>
           <p class="figure">
             <span class="figure-value">US$205</span>
             <span class="figure-unit">a tonne</span>
           </p>
-          <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market, 28 October 2026</a></p>
+          <p class="measure-meta">Average. China import market. 28 October 2026. Up $17 a tonne from the previous trading day.</p>
+          <p class="measure-not">Not the outright London copper price. Not a live quote.</p>
+          <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market</a>, 28 October 2026.</p>
         </div>
         <div class="actions">
           <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
-          <a class="btn btn-ghost" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
         </div>
-        <p class="handoff">Continue on Beehiiv to subscribe.</p>
+        <p class="handoff"><a href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>. Continue on Beehiiv to subscribe.</p>
       </div>
-      <div class="hero-plate">
-        <div class="hero-media">
-          <img class="hero-still" src="art/hero-poster-960.webp" srcset="art/hero-poster-640.webp 640w, art/hero-poster-960.webp 960w, art/hero-poster-1440.webp 1440w, art/hero-16x9.webp 2688w" sizes="(min-width: 960px) 48vw, 100vw" alt="" width="2688" height="1536" fetchpriority="high" decoding="async">
-          <video id="hero-video" muted playsinline loop preload="none" poster="art/hero-poster-960.webp" data-webm="art/hero-loop.webm" data-mp4="art/hero-loop-web.mp4" aria-hidden="true"></video>
+      <div class="hero-visual">
+        <div class="hero-plate">
+          <div class="hero-media">
+            <img class="hero-still" src="art/hero-poster-960.webp" srcset="art/hero-poster-640.webp 640w, art/hero-poster-960.webp 960w, art/hero-poster-1440.webp 1440w, art/hero-16x9.webp 2688w" sizes="(min-width: 960px) 42vw, 100vw" alt="" width="2688" height="1536" fetchpriority="high" decoding="async">
+            <video id="hero-video" muted playsinline loop preload="none" poster="art/hero-poster-960.webp" data-webm="art/hero-loop.webm" data-mp4="art/hero-loop-web.mp4" aria-hidden="true"></video>
+          </div>
         </div>
         <p class="film-note">Designed motion. Not documentary footage.</p>
       </div>
     </div>
   </section>
 
-  <section class="tag" aria-labelledby="number-heading">
+  <section class="section explain" aria-labelledby="explain-heading">
     <div class="wrap">
-      <div class="tag-copy">
-        <p>On 28 October 2026, SMM reported an average Yangshan warrant premium of US$205 a tonne, up $17 from the previous trading day. That is a Chinese import-market measure, not the outright London copper price.</p>
-        <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market, 28 October 2026</a></p>
-        <p><a href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the full copper issue</a></p>
+      <h2 id="explain-heading">The warrant premium</h2>
+      <p>On 28 October 2026, Shanghai Metals Market put the average Yangshan warrant premium at US$205 a tonne, up $17 from the previous trading day. The same note put the warrant range at US$190 to US$220 a tonne. Their headline said premiums had climbed to record highs.</p>
+      <div class="explain-grid">
+        <div>
+          <h3>What it is</h3>
+          <p>An average for that day, in China's import market. The copper issue describes it as what buyers pay on top of the London price to get copper into China. Location, the piece argues, can matter as much as the headline price.</p>
+        </div>
+        <div>
+          <h3>What it isn't</h3>
+          <p>Not the outright London copper price. Not a live quote. SMM says the figures are for reference only and are not a recommendation. This page stops there. The rest of the reporting is in the issue.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section chain" aria-labelledby="materials-heading">
-    <div class="wrap">
+  <section class="section" aria-labelledby="materials-heading">
+    <div class="wrap prose">
       <h2 id="materials-heading">The materials behind the machines</h2>
-      <p class="chain-lead">Copper, lithium, graphite, gallium, germanium and rare earths. Mission Critical follows where these supply chains tighten and what buyers do next.</p>
-      <div class="chain-nav" role="tablist" aria-label="Supply chain">
-        <button type="button" role="tab" id="tab-materials" aria-controls="panel-materials" aria-selected="true">The materials</button>
-        <button type="button" role="tab" id="tab-step" aria-controls="panel-step" aria-selected="false" tabindex="-1">The next step</button>
-      </div>
-      <div class="chain-panels">
-        <div class="chain-panel is-selected" id="panel-materials" role="tabpanel" aria-labelledby="tab-materials" tabindex="0">
-          <ul class="minerals">
-            <li><a href="#issue">Copper</a></li>
-            <li>Lithium</li>
-            <li>Graphite</li>
-            <li>Gallium</li>
-            <li>Germanium</li>
-            <li>Rare earths</li>
-          </ul>
-        </div>
-        <div class="chain-panel" id="panel-step" role="tabpanel" aria-labelledby="tab-step" tabindex="0">
-          <h3 id="choke-heading">Who controls the next step?</h3>
-          <p>Export controls, tariffs and financing decisions can change a supply chain before new material reaches a customer. The question is what changed, where it bites and who has another option.</p>
-          <figure class="plate">
-            <img src="art/section-chokepoint.webp" alt="Illustration of coloured strands narrowing through a gap" width="1216" height="896" loading="lazy" decoding="async">
-            <figcaption>Illustration. Not a photograph of a route or a port.</figcaption>
-          </figure>
-        </div>
-      </div>
+      <p>Copper, lithium, graphite, gallium, germanium and rare earths. I follow where those supply chains tighten, and what buyers do next.</p>
+      <h2 id="choke-heading">Who controls the next step?</h2>
+      <p>Export controls, tariffs and financing decisions can change a supply chain before new material reaches a customer. The question is what changed, where it bites, and who has another option.</p>
     </div>
   </section>
 
   <section class="section" id="issue" aria-labelledby="issue-title">
     <div class="wrap record">
       <div>
-        <h2 id="issue-title">Copper's got a plumbing problem</h2>
+        <h2 id="issue-title"><a href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Copper's got a plumbing problem</a></h2>
         <p class="dateline">On the web | Issue 2 | 2 November 2026</p>
         <p class="deck">A US$205 Yangshan warrant premium on 28 October shows why the location of copper matters as much as the headline price.</p>
         <ul class="tags">
@@ -140,7 +132,6 @@
           <li>Trade policy</li>
         </ul>
         <p class="fresh">Market figures in this issue are dated 22-29 October 2026.</p>
-        <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
       </div>
       <figure class="plate">
         <img src="art/section-minerals.webp" alt="Illustration of a faceted crystal crossed by copper-coloured veins" width="1216" height="896" loading="lazy" decoding="async">
@@ -153,7 +144,7 @@
     <div class="wrap split reverse">
       <div>
         <h2 id="cam-heading">From Cam</h2>
-        <p>I'm Cam Drummond. Mission Critical is my newsletter about the materials behind the AI build-out. I follow the supply chain, show the sources and explain what the change means.</p>
+        <p>I'm Cam Drummond. This is my newsletter on the materials behind the AI build-out. I follow the supply chain, show the source, and say what the change means.</p>
       </div>
       <figure class="plate">
         <img src="art/section-author.webp" alt="Illustration of a desk, a rock specimen and a laptop against a dusk skyline" width="1216" height="896" loading="lazy" decoding="async">
@@ -164,12 +155,8 @@
 
   <section class="close" aria-labelledby="close-heading">
     <div class="wrap">
-      <h2 id="close-heading">Follow the materials, not just the machines</h2>
-      <p>Get Mission Critical by Cam Drummond. Start with the copper issue, then subscribe free on Beehiiv.</p>
-      <div class="actions">
-        <a class="btn btn-paper" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
-        <a class="btn btn-ghost" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
-      </div>
+      <h2 id="close-heading">Subscribe</h2>
+      <p>Get Mission Critical by Cam Drummond. Start with the copper issue, then <a href="https://itsmissioncritical.beehiiv.com/subscribe">subscribe free</a> on Beehiiv.</p>
     </div>
   </section>
 </main>

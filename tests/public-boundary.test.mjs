@@ -40,14 +40,21 @@ test("home, read, and about carry the canonical destinations", async () => {
   }
   assert.match(home, /What the AI <span class="compound">build-out<\/span>/);
   assert.match(home, /is made of/);
-  assert.match(home, /On 28 October 2026, SMM reported/);
+  assert.match(home, /On 28 October 2026, Shanghai Metals Market put the average Yangshan warrant premium/);
   assert.match(home, /id="motion-control"/);
-  assert.match(home, /class="hero"[\s\S]*US\$205/);
-  assert.match(home, /role="tablist"/);
+  assert.match(home, /Yangshan warrant premium/);
+  assert.match(home, /Not the outright London copper price/);
+  assert.match(home, /Not a live quote/);
+  assert.match(home, /US\$190 to US\$220/);
+  assert.match(home, /class="menu-btn"/);
   assert.match(home, /Who controls the next step\?/);
   assert.match(read, /Read Mission Critical/);
+  assert.match(read, /class="menu-btn"/);
   assert.match(about, /Show the source/);
-  assert.match(about, /Shanghai Metals Market, 28 October 2026/);
+  assert.match(about, /class="menu-btn"/);
+  assert.match(about, /Shanghai Metals Market/);
+  assert.match(about, /28 October 2026/);
+  assert.doesNotMatch(home, /195 yuan/);
   assert.doesNotMatch(home, /type="email"/);
   assert.doesNotMatch(home, /weekly/i);
 });

@@ -27,10 +27,13 @@
     </span>
   </a>
   <nav class="site-nav" aria-label="Primary">
-    <a href="../">Home</a>
-    <a href="./" aria-current="page">Read</a>
-    <a href="../about/">About</a>
-    <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav-panel">Menu</button>
+    <div id="nav-panel" class="nav-panel">
+      <a href="../">Home</a>
+      <a href="./" aria-current="page">Read</a>
+      <a href="../about/">About</a>
+      <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    </div>
   </nav>
 </header>
 <main id="content">
@@ -41,18 +44,17 @@
   <article class="sheet">
     <div class="wrap">
       <h1>Read Mission Critical</h1>
-      <p>Published issues, with the reporting dates kept visible.</p>
+      <p>What's published. The dates stay on it.</p>
       <div class="record">
         <div>
-          <h2>Copper's got a plumbing problem</h2>
+          <h2><a href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Copper's got a plumbing problem</a></h2>
           <p class="dateline">On the web | Issue 2 | 2 November 2026</p>
           <p class="deck">A US$205 Yangshan warrant premium on 28 October shows why the location of copper matters as much as the headline price.</p>
           <ul class="tags">
             <li>Copper</li>
             <li>Trade policy</li>
           </ul>
-          <p class="fresh">Market figures in this issue are dated 22-29 October 2026.</p>
-          <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
+        <p class="fresh">Market figures in this issue are dated 22-29 October 2026.</p>
         </div>
         <figure class="plate">
           <img src="../art/section-minerals.webp" alt="Illustration of a faceted crystal crossed by copper-coloured veins" width="1216" height="896" decoding="async">
@@ -75,5 +77,6 @@
     </nav>
   </div>
 </footer>
+<script type="module" src="../js/site.js"></script>
 </body>
 </html>

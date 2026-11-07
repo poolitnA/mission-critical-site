@@ -27,10 +27,13 @@
     </span>
   </a>
   <nav class="site-nav" aria-label="Primary">
-    <a href="../">Home</a>
-    <a href="../read/">Read</a>
-    <a href="./" aria-current="page">About</a>
-    <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav-panel">Menu</button>
+    <div id="nav-panel" class="nav-panel">
+      <a href="../">Home</a>
+      <a href="../read/">Read</a>
+      <a href="./" aria-current="page">About</a>
+      <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
+    </div>
   </nav>
 </header>
 <main id="content">
@@ -42,11 +45,11 @@
     <div class="wrap">
       <h1>About Mission Critical</h1>
       <p class="strap">What the AI build-out is made of.</p>
-      <p>I'm Cam Drummond. Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.</p>
+      <p>I'm Cam Drummond. I follow critical minerals from the pit to the finished product, and the politics and money that move them.</p>
       <h2>Show the source</h2>
-      <p>The reporting links to the documents and data behind the story. Dates stay visible, and analysis is kept separate from reported facts.</p>
-      <p>On 28 October 2026, SMM reported an average Yangshan warrant premium of US$205 a tonne, up $17 from the previous trading day. That is a Chinese import-market measure, not the outright London copper price.</p>
-      <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market, 28 October 2026</a></p>
+      <p>The reporting links to the documents and the data. Dates stay on the page. The reported figure and the analysis are kept apart.</p>
+      <p>On 28 October 2026, Shanghai Metals Market put the average Yangshan warrant premium at US$205 a tonne, up $17 from the previous trading day. That is a Chinese import-market measure. It is not the outright London copper price, and it is not a live quote.</p>
+      <p class="signed">Source: <a href="https://news.metal.com/newscontent/104183498-spot-supply-shortage-continues-to-intensify-premiums-climb-to-record-highs-smm-yangshan-spot-copper">Shanghai Metals Market</a>, 28 October 2026.</p>
       <div class="actions">
         <a class="btn btn-primary" href="https://itsmissioncritical.beehiiv.com/p/copper-s-got-a-plumbing-problem">Read the copper issue</a>
         <a class="btn btn-ghost" href="https://itsmissioncritical.beehiiv.com/subscribe">Subscribe free</a>
@@ -64,5 +67,6 @@
     </nav>
   </div>
 </footer>
+<script type="module" src="../js/site.js"></script>
 </body>
 </html>

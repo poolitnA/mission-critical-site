@@ -1,5 +1,7 @@
 import { animate, inView, scroll } from "./vendor/motion.js";
 
+document.documentElement.classList.add("js");
+
 const reduceQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const wideQuery = window.matchMedia("(min-width: 768px)");
 const video = document.querySelector("#hero-video");
@@ -163,7 +165,57 @@ if (desiredPlay) {
   setButton(false);
 }
 
+setupMenu();
 setupChain();
+
+function setupMenu() {
+  const btn = document.querySelector(".menu-btn");
+  const panel = document.getElementById("nav-panel");
+  if (!btn || !panel) return;
+  const mq = window.matchMedia("(max-width: 900px)");
+
+  function setClosed() {
+    btn.setAttribute("aria-expanded", "false");
+    panel.classList.remove("is-open");
+    panel.hidden = mq.matches;
+  }
+
+  function setOpen() {
+    btn.setAttribute("aria-expanded", "true");
+    panel.hidden = false;
+    panel.classList.add("is-open");
+    const first = panel.querySelector("a");
+    if (first) first.focus();
+  }
+
+  btn.addEventListener("click", function () {
+    if (btn.getAttribute("aria-expanded") === "true") {
+      setClosed();
+      btn.focus();
+    } else {
+      setOpen();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape") return;
+    if (btn.getAttribute("aria-expanded") !== "true") return;
+    setClosed();
+    btn.focus();
+  });
+
+  mq.addEventListener("change", function () {
+    if (!mq.matches) {
+      panel.hidden = false;
+      panel.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    } else if (btn.getAttribute("aria-expanded") !== "true") {
+      panel.hidden = true;
+    }
+  });
+
+  if (mq.matches) panel.hidden = true;
+}
 
 function setupChain() {
   const root = document.querySelector(".chain");
