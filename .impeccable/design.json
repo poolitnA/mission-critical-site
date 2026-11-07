@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T20:22:00Z",
+  "title": "Design System: Mission Critical",
+  "extensions": {
+    "colorMeta": {
+      "copper": {
+        "role": "primary",
+        "displayName": "Furnace copper",
+        "canonical": "#b0441f",
+        "tonalRamp": ["oklch(15.0% 0.150 38.3)", "oklch(26.4% 0.150 38.3)", "oklch(37.9% 0.150 38.3)", "oklch(49.3% 0.150 38.3)", "oklch(60.7% 0.150 38.3)", "oklch(72.1% 0.150 38.3)", "oklch(83.6% 0.150 38.3)", "oklch(95.0% 0.150 38.3)"]
+      },
+      "copper-deep": {
+        "role": "primary",
+        "displayName": "Deep copper",
+        "canonical": "#8c3418",
+        "tonalRamp": ["oklch(15.0% 0.126 37.5)", "oklch(26.4% 0.126 37.5)", "oklch(37.9% 0.126 37.5)", "oklch(49.3% 0.126 37.5)", "oklch(60.7% 0.126 37.5)", "oklch(72.1% 0.126 37.5)", "oklch(83.6% 0.126 37.5)", "oklch(95.0% 0.126 37.5)"]
+      },
+      "copper-hot": {
+        "role": "primary",
+        "displayName": "Hot copper",
+        "canonical": "#f0b48a",
+        "tonalRamp": ["oklch(15.0% 0.090 56.1)", "oklch(26.4% 0.090 56.1)", "oklch(37.9% 0.090 56.1)", "oklch(49.3% 0.090 56.1)", "oklch(60.7% 0.090 56.1)", "oklch(72.1% 0.090 56.1)", "oklch(83.6% 0.090 56.1)", "oklch(95.0% 0.090 56.1)"]
+      },
+      "copper-press": {
+        "role": "primary",
+        "displayName": "Pressed copper",
+        "canonical": "#9a3b1b",
+        "tonalRamp": ["oklch(15.0% 0.135 38.1)", "oklch(26.4% 0.135 38.1)", "oklch(37.9% 0.135 38.1)", "oklch(49.3% 0.135 38.1)", "oklch(60.7% 0.135 38.1)", "oklch(72.1% 0.135 38.1)", "oklch(83.6% 0.135 38.1)", "oklch(95.0% 0.135 38.1)"]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus cyan",
+        "canonical": "#9be8ff",
+        "tonalRamp": ["oklch(15.0% 0.082 218.6)", "oklch(26.4% 0.082 218.6)", "oklch(37.9% 0.082 218.6)", "oklch(49.3% 0.082 218.6)", "oklch(60.7% 0.082 218.6)", "oklch(72.1% 0.082 218.6)", "oklch(83.6% 0.082 218.6)", "oklch(95.0% 0.082 218.6)"]
+      },
+      "bench": {
+        "role": "neutral",
+        "displayName": "Bench black",
+        "canonical": "#08090d",
+        "tonalRamp": ["oklch(15.0% 0.009 273.2)", "oklch(26.4% 0.009 273.2)", "oklch(37.9% 0.009 273.2)", "oklch(49.3% 0.009 273.2)", "oklch(60.7% 0.009 273.2)", "oklch(72.1% 0.009 273.2)", "oklch(83.6% 0.009 273.2)", "oklch(95.0% 0.009 273.2)"]
+      },
+      "bench-raise": {
+        "role": "neutral",
+        "displayName": "Raised bench",
+        "canonical": "#12141c",
+        "tonalRamp": ["oklch(15.0% 0.017 273.8)", "oklch(26.4% 0.017 273.8)", "oklch(37.9% 0.017 273.8)", "oklch(49.3% 0.017 273.8)", "oklch(60.7% 0.017 273.8)", "oklch(72.1% 0.017 273.8)", "oklch(83.6% 0.017 273.8)", "oklch(95.0% 0.017 273.8)"]
+      },
+      "bench-lift": {
+        "role": "neutral",
+        "displayName": "Lifted bench",
+        "canonical": "#1b1e28",
+        "tonalRamp": ["oklch(15.0% 0.020 271.8)", "oklch(26.4% 0.020 271.8)", "oklch(37.9% 0.020 271.8)", "oklch(49.3% 0.020 271.8)", "oklch(60.7% 0.020 271.8)", "oklch(72.1% 0.020 271.8)", "oklch(83.6% 0.020 271.8)", "oklch(95.0% 0.020 271.8)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Specimen ink",
+        "canonical": "#f4f0e8",
+        "tonalRamp": ["oklch(15.0% 0.011 84.6)", "oklch(26.4% 0.011 84.6)", "oklch(37.9% 0.011 84.6)", "oklch(49.3% 0.011 84.6)", "oklch(60.7% 0.011 84.6)", "oklch(72.1% 0.011 84.6)", "oklch(83.6% 0.011 84.6)", "oklch(95.0% 0.011 84.6)"]
+      },
+      "ink-dim": {
+        "role": "neutral",
+        "displayName": "Dim ink",
+        "canonical": "#d4cdc2",
+        "tonalRamp": ["oklch(15.0% 0.017 79.3)", "oklch(26.4% 0.017 79.3)", "oklch(37.9% 0.017 79.3)", "oklch(49.3% 0.017 79.3)", "oklch(60.7% 0.017 79.3)", "oklch(72.1% 0.017 79.3)", "oklch(83.6% 0.017 79.3)", "oklch(95.0% 0.017 79.3)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Stone paper",
+        "canonical": "#e6e0d2",
+        "tonalRamp": ["oklch(15.0% 0.020 87.5)", "oklch(26.4% 0.020 87.5)", "oklch(37.9% 0.020 87.5)", "oklch(49.3% 0.020 87.5)", "oklch(60.7% 0.020 87.5)", "oklch(72.1% 0.020 87.5)", "oklch(83.6% 0.020 87.5)", "oklch(95.0% 0.020 87.5)"]
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "Paper ink",
+        "canonical": "#1b1612",
+        "tonalRamp": ["oklch(15.0% 0.011 60.8)", "oklch(26.4% 0.011 60.8)", "oklch(37.9% 0.011 60.8)", "oklch(49.3% 0.011 60.8)", "oklch(60.7% 0.011 60.8)", "oklch(72.1% 0.011 60.8)", "oklch(83.6% 0.011 60.8)", "oklch(95.0% 0.011 60.8)"]
+      },
+      "paper-dim": {
+        "role": "neutral",
+        "displayName": "Dim paper ink",
+        "canonical": "#3f3832",
+        "tonalRamp": ["oklch(15.0% 0.014 63.0)", "oklch(26.4% 0.014 63.0)", "oklch(37.9% 0.014 63.0)", "oklch(49.3% 0.014 63.0)", "oklch(60.7% 0.014 63.0)", "oklch(72.1% 0.014 63.0)", "oklch(83.6% 0.014 63.0)", "oklch(95.0% 0.014 63.0)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(244, 240, 232, 0.22)",
+        "tonalRamp": ["oklch(15.0% 0.011 84.6)", "oklch(26.4% 0.011 84.6)", "oklch(37.9% 0.011 84.6)", "oklch(49.3% 0.011 84.6)", "oklch(60.7% 0.011 84.6)", "oklch(72.1% 0.011 84.6)", "oklch(83.6% 0.011 84.6)", "oklch(95.0% 0.011 84.6)"]
+      },
+      "close-cream": {
+        "role": "neutral",
+        "displayName": "Close cream",
+        "canonical": "#f7f1e8",
+        "tonalRamp": ["oklch(15.0% 0.014 78.3)", "oklch(26.4% 0.014 78.3)", "oklch(37.9% 0.014 78.3)", "oklch(49.3% 0.014 78.3)", "oklch(60.7% 0.014 78.3)", "oklch(72.1% 0.014 78.3)", "oklch(83.6% 0.014 78.3)", "oklch(95.0% 0.014 78.3)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#fff",
+        "tonalRamp": ["oklch(15.0% 0 0)", "oklch(26.4% 0 0)", "oklch(37.9% 0 0)", "oklch(49.3% 0 0)", "oklch(60.7% 0 0)", "oklch(72.1% 0 0)", "oklch(83.6% 0 0)", "oklch(95.0% 0 0)"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero strapline only, sized with 8.15cqi against the hero copy container."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles on the stone-paper sheet."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings on the bench, the sheet, and the closing band."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text in Literata, held to 66ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, buttons, and the motion control in Schibsted Grotesk."
+      }
+    },
+    "shadows": [
+      {
+        "name": "plate",
+        "value": "0 16px 36px rgba(0, 0, 0, 0.28)",
+        "purpose": "The only shadow. Sits under illustrations in the record and the split bands."
+      }
+    ],
+    "motion": [
+      {
+        "name": "reveal-figure",
+        "value": "translateY(18px) to translateY(0), 0.55s, ease-out",
+        "purpose": "Assay figure rise while html[data-motion=run]. Cleared for reduced motion and when scripting is off."
+      },
+      {
+        "name": "hero-drift",
+        "value": "linear scroll map from scale(1.08) translateY(0) to scale(1) translateY(-40px)",
+        "purpose": "Hero media drift while the film is playing on a wide viewport. The film itself stays muted and starts from the poster."
+      },
+      {
+        "name": "reduced",
+        "value": "0.01ms",
+        "purpose": "Animation, transition, and scroll behavior under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "header-compact", "value": "420px" },
+      { "name": "actions-stack", "value": "560px" },
+      { "name": "header-wrap", "value": "760px" },
+      { "name": "hero-stack", "value": "860px" },
+      { "name": "layout-wide", "value": "861px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The subscribe and read action on the bench and on the paper sheet.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Subscribe free</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.1rem; border: 1px solid transparent; border-radius: 2px; background: var(--copper, #b0441f); color: #fff; font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; } .ds-btn-primary:hover { background: #9a3b1b; } .ds-btn-primary:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The second action on the bench, with an ink hairline.",
+      "html": "<button class=\"ds-btn-ghost\" type=\"button\">Read the copper issue</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.1rem; border: 1px solid rgba(244, 240, 232, 0.55); border-radius: 2px; background: transparent; color: var(--ink, #f4f0e8); font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; } .ds-btn-ghost:hover { background: rgba(244, 240, 232, 0.08); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button on Paper",
+      "kind": "button",
+      "refersTo": "button-ghost-paper",
+      "description": "The second action on the stone-paper sheet.",
+      "html": "<div class=\"ds-paper-stage\"><button class=\"ds-btn-ghost-paper\" type=\"button\">Subscribe free</button></div>",
+      "css": ".ds-paper-stage { background: var(--paper, #e6e0d2); padding: 1.5rem; } .ds-btn-ghost-paper { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.1rem; border: 1px solid rgba(27, 22, 18, 0.5); border-radius: 2px; background: transparent; color: var(--paper-ink, #1b1612); font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; } .ds-btn-ghost-paper:hover { background: rgba(27, 22, 18, 0.06); } .ds-btn-ghost-paper:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Paper Button",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "The light action on the deep-copper closing band.",
+      "html": "<div class=\"ds-close-stage\"><button class=\"ds-btn-paper\" type=\"button\">Subscribe free</button></div>",
+      "css": ".ds-close-stage { background: var(--copper-deep, #8c3418); padding: 1.5rem; } .ds-btn-paper { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.1rem; border: 1px solid transparent; border-radius: 2px; background: var(--ink, #f4f0e8); color: var(--paper-ink, #1b1612); font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; text-decoration: none; cursor: pointer; } .ds-btn-paper:hover { background: #fff; } .ds-btn-paper:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Motion Control",
+      "kind": "button",
+      "refersTo": "button-motion",
+      "description": "The keyboard pause for the muted hero film.",
+      "html": "<button class=\"ds-motion\" type=\"button\" aria-pressed=\"false\">Play motion</button>",
+      "css": ".ds-motion { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 48px; padding: 0.7rem 1.1rem; border: 1px solid rgba(244, 240, 232, 0.45); border-radius: 2px; background: var(--bench-raise, #12141c); color: var(--ink, #f4f0e8); font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; cursor: pointer; } .ds-motion:hover { background: #1b1e28; } .ds-motion:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; } .ds-motion:disabled { opacity: 0.7; cursor: not-allowed; }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Bench header links. The current page carries a hot-copper underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a class=\"ds-nav-link is-current\" href=\"#\" aria-current=\"page\">Home</a><a class=\"ds-nav-link\" href=\"#\">Read</a><a class=\"ds-nav-link\" href=\"#\">About</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.4rem; background: var(--bench, #08090d); padding: 0.75rem 1rem; border-bottom: 1px solid var(--line, rgba(244, 240, 232, 0.22)); } .ds-nav-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0.35rem 0.7rem; color: var(--ink, #f4f0e8); font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; text-decoration: none; } .ds-nav-link.is-current { box-shadow: inset 0 -2px 0 var(--copper-hot, #f0b48a); } .ds-nav-link:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Assay Figure",
+      "kind": "custom",
+      "description": "The checkable number on the stone-paper field, in deep copper.",
+      "html": "<div class=\"ds-assay\"><p class=\"ds-figure\"><span class=\"ds-figure-value\">US$205</span><span class=\"ds-figure-unit\">a tonne</span></p></div>",
+      "css": ".ds-assay { background: var(--paper, #e6e0d2); padding: 2rem; } .ds-figure { margin: 0; color: var(--copper-deep, #8c3418); font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 680; letter-spacing: -0.04em; line-height: 0.9; } .ds-figure-value { display: block; font-size: clamp(3.2rem, 8vw, 5.5rem); font-variant-numeric: tabular-nums; } .ds-figure-unit { display: block; margin-top: 0.35rem; font-size: 1.15rem; letter-spacing: 0; font-weight: 600; }"
+    },
+    {
+      "name": "Reading Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "Full-bleed stone paper for page titles and reading.",
+      "html": "<article class=\"ds-sheet\"><h1 class=\"ds-sheet-title\">About Mission Critical</h1><p class=\"ds-sheet-strap\">What the AI build-out is made of.</p><p class=\"ds-sheet-copy\">Mission Critical follows critical minerals from the pit to the finished product, along with the politics and money that move them.</p></article>",
+      "css": ".ds-sheet { background: var(--paper, #e6e0d2); color: var(--paper-ink, #1b1612); padding: clamp(3.5rem, 8vw, 6rem) clamp(1rem, 4vw, 3.5rem) clamp(4rem, 8vw, 6.5rem); } .ds-sheet-title { margin: 0 0 0.45em; font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 650; letter-spacing: -0.03em; line-height: 1.02; font-size: clamp(2.2rem, 6vw, 4.2rem); } .ds-sheet-strap { margin: 0 0 1rem; font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: clamp(1.35rem, 2.4vw, 1.8rem); letter-spacing: -0.03em; line-height: 1.15; } .ds-sheet-copy { max-width: 66ch; margin: 0; font-family: var(--text, Literata, \"Iowan Old Style\", Palatino, \"Palatino Linotype\", serif); font-size: 1.125rem; font-weight: 460; line-height: 1.6; }"
+    },
+    {
+      "name": "Illustration Plate",
+      "kind": "card",
+      "description": "A square illustration frame with the single plate shadow and a dim caption.",
+      "html": "<figure class=\"ds-plate\"><div class=\"ds-plate-frame\"></div><figcaption class=\"ds-plate-caption\">Illustration. Not a photograph of a mine.</figcaption></figure>",
+      "css": ".ds-plate { margin: 0; background: var(--bench, #08090d); padding: 1.5rem; } .ds-plate-frame { width: 100%; aspect-ratio: 1216 / 896; background: var(--bench-raise, #12141c); box-shadow: var(--shadow, 0 16px 36px rgba(0, 0, 0, 0.28)); } .ds-plate-caption { margin-top: 0.7rem; color: var(--ink-dim, #d4cdc2); font-family: var(--text, Literata, \"Iowan Old Style\", Palatino, \"Palatino Linotype\", serif); font-size: 0.95rem; }"
+    },
+    {
+      "name": "Close Band",
+      "kind": "custom",
+      "refersTo": "close-band",
+      "description": "The deep-copper closing field, with a paper button and a cream ghost.",
+      "html": "<section class=\"ds-close\"><h2 class=\"ds-close-title\">Follow the materials, not just the machines</h2><p class=\"ds-close-copy\">Get Mission Critical by Cam Drummond. Start with the copper issue, then subscribe free on Beehiiv.</p><div class=\"ds-close-actions\"><a class=\"ds-close-paper\" href=\"#\">Subscribe free</a><a class=\"ds-close-ghost\" href=\"#\">Read the copper issue</a></div></section>",
+      "css": ".ds-close { background: var(--copper-deep, #8c3418); color: #f7f1e8; padding: clamp(4.5rem, 9vw, 7rem) clamp(1rem, 4vw, 3.5rem); } .ds-close-title { margin: 0 0 0.55em; font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 650; letter-spacing: -0.03em; line-height: 1.05; font-size: clamp(1.8rem, 3vw, 2.7rem); } .ds-close-copy { max-width: 66ch; margin: 0; color: #f7f1e8; font-family: var(--text, Literata, \"Iowan Old Style\", Palatino, \"Palatino Linotype\", serif); font-size: 1.15rem; font-weight: 460; line-height: 1.6; } .ds-close-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.4rem; } .ds-close-paper, .ds-close-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 2px; font-family: var(--display, \"Schibsted Grotesk\", \"Avenir Next Condensed\", \"Arial Narrow\", sans-serif); font-weight: 640; font-size: 1rem; line-height: 1.1; text-decoration: none; } .ds-close-paper { background: var(--ink, #f4f0e8); color: var(--paper-ink, #1b1612); border: 1px solid transparent; } .ds-close-paper:hover { background: #fff; } .ds-close-ghost { background: transparent; color: #f7f1e8; border: 1px solid rgba(247, 241, 232, 0.72); } .ds-close-paper:focus-visible, .ds-close-ghost:focus-visible { outline: 2px solid var(--focus, #9be8ff); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Specimen Bench",
+    "overview": "Mission Critical sits on a near-black bench. Reading surfaces are stone paper. Copper is the checked mark: the action, the assay figure, and the second line of the strapline. Names, headings, and numbers are Schibsted Grotesk. Reading is Literata. The hero is a designed film behind a bench-colored scrim, with the poster as the still state. Illustrations keep the existing copper, cyan, and violet family. The interface does not add violet chrome.\n\nDensity is editorial. One reading measure, wide section intervals, and a single record on the bench. Motion is the hero film and a short rise on the assay figure. Body copy does not move.",
+    "keyCharacteristics": [
+      "Bench black field, stone-paper sheets, deep-copper closing band",
+      "Copper for the primary action, the assay figure, and the strapline's second line",
+      "Schibsted Grotesk for names and numbers, Literata for reading",
+      "Two-pixel controls, hairline rules, one soft shadow under illustrations",
+      "Designed hero motion behind a scrim; reading stays still"
+    ],
+    "rules": [
+      {
+        "name": "The Assay Copper Rule",
+        "body": "Copper marks the thing to check or the thing to do: the primary action, the figure on paper, the strapline's second line, and the current page. The bench is not washed with it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Sheet Rule",
+        "body": "Stone paper is a full-bleed reading field. On it, text is paper ink, links and the figure are deep copper, and selection is deep copper with white text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Faces Rule",
+        "body": "Schibsted Grotesk carries the name, the headings, the dateline, the figure, and the controls. Literata carries the reading. They do not swap.",
+        "section": "typography"
+      },
+      {
+        "name": "The Strapline Break Rule",
+        "body": "The compound \"build-out\" stays on one line. The next line is \"is made of\", in hot copper, at the same display size.",
+        "section": "typography"
+      },
+      {
+        "name": "The Measure Rule",
+        "body": "Reading stops at 66ch. The issue deck and the freshness line stop at 62ch. The hero dek stops at 38rem.",
+        "section": "layout"
+      },
+      {
+        "name": "The Tonal Bench Rule",
+        "body": "A region separates by changing field color. Buttons, the header, and the sheet do not receive a shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Two-Pixel Rule",
+        "body": "Interactive controls use a 2px radius. Nothing else is rounded.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Current Underline Rule",
+        "body": "The active nav item is an inset 2px hot-copper line. It is not a filled chip.",
+        "section": "components"
+      },
+      {
+        "name": "The Still Reading Rule",
+        "body": "The film may play, muted, and the assay figure may rise once. Reading text does not animate. Reduced motion starts on the still poster and clears the figure transform.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do set the page on bench black with specimen ink, and set reading on stone paper with paper ink.",
+      "Do use Schibsted Grotesk for the name, headings, datelines, figures, and controls, and Literata for reading.",
+      "Do keep \"build-out\" on the strapline's first line and set \"is made of\" in hot copper.",
+      "Do mark the current page with an inset 2px hot-copper line, and show keyboard focus as a 2px focus-cyan outline, 3px offset.",
+      "Do keep the hero muted, and start from the poster when reduced motion is requested."
+    ],
+    "donts": [
+      "Don't set reading text in Schibsted Grotesk, or headings in Literata.",
+      "Don't round controls past 2px, or round the sheets, bands, or illustrations.",
+      "Don't add a shadow to anything but the illustration plates. The plate shadow is 0 16px 36px rgba(0, 0, 0, 0.28).",
+      "Don't use furnace copper as a large bench fill. The deep-copper closing band is the one full-bleed copper field.",
+      "Don't animate paragraphs, headings, or captions. The only text motion is the assay figure, and it is removed when reduced motion is on or scripting is off."
+    ]
+  }
+}
